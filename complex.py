@@ -36,7 +36,7 @@ class Complex:
     def __abs__(self):
         x = self.x
         y = self.y
-        return sqrt((Decimal(x) ** 2) + (Decimal(y) ** 2))
+        return sqrt((Decimal(str(x)) ** 2) + (Decimal(str(y)) ** 2))
 
     def __str__(self):
         return 'Real: %s \nImag: %s' % (self.x, self.y)
