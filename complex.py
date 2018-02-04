@@ -17,32 +17,31 @@ class Complex:
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return (a - x) + ((b - y) * 1j)
+        return Complex((a - x) + ((b - y) * 1j))
 
     def __sub__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return (a - x) + ((b - y) * 1j)
+        return Complex((a - x) + ((b - y) * 1j))
 
-    def __mult__(self, other):
+    def __mul__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return ((a * x) - (b * y)) + (((a * y) + (b * x)) * 1j)
+        return Complex(((a * x) - (b * y)) + (((a * y) + (b * x)) * 1j))
 
     def __abs__(self):
         x = self.x
         y = self.y
-        return (((x ** 2) + (y ** 2)) ** .5)
+        return Complex(sqrt(((x ** 2) + (y ** 2))))
 
     def __str__(self):
         return 'Real: %s \nImag: %s' % (self.real, self.imag)
 
-    def __trunc__(self):
-        return int(self.real)
+
 
 z = Complex(5, 5)
 
