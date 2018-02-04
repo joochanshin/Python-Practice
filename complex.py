@@ -3,35 +3,35 @@ import cmath
 
 class Complex:
     def __init__(self, x, y):
-        self.real = x
-        self.imag = y
+        self.x = x
+        self.y = y
 
     def getReal(self):
-        return self.real
+        return self.x
 
     def getImaginary(self):
-        return self.imag
+        return self.y
 
     def __add__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex((a - x) + ((b - y) * 1j))
+        return Complex((a - x) + ((b - y) ))
 
     def __sub__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex((a - x) + ((b - y) * 1j))
+        return Complex((a - x) + ((b - y) ))
 
     def __mul__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex(((a * x) - (b * y)) + (((a * y) + (b * x)) * 1j))
+        return Complex(((a * x) - (b * y)) + (((a * y) + (b * x)) ))
 
     def __abs__(self):
         x = self.x
@@ -39,10 +39,7 @@ class Complex:
         return Complex(sqrt(((x ** 2) + (y ** 2))))
 
     def __str__(self):
-        return 'Real: %s \nImag: %s' % (self.real, self.imag)
+        return 'Real: %s \nImag: %s' % (self.x, self.y)
 
-
-
-z = Complex(5, 5)
 
 
