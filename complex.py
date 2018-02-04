@@ -2,6 +2,7 @@ from math import *
 from decimal import *
 import cmath
 
+
 class Complex:
     def __init__(self, x, y):
         self.x = x
@@ -18,20 +19,21 @@ class Complex:
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex((a + x), ((b + y) ))
+        return Complex((a + x), (b + y))
 
     def __sub__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex((a - x), ((b - y) ))
+        return Complex((a - x), (b - y))
+
     def __mul__(self, other):
         x = self.x
         y = self.y
         a = other.getReal()
         b = other.getImaginary()
-        return Complex(((a * x) - (b * y)), (((a * y) + (b * x)) ))
+        return Complex(((a * x) - (b * y)), ((a * y) + (b * x)))
 
     def __abs__(self):
         x = self.x

@@ -21,13 +21,13 @@ def accept_c(c):
         return True
 
 
+'''
 print accept_c(c1)
-
 for x in range(-2, 3):
     for y in range(-2, 3):
         print accept_c(Complex(x, y))
     print "\n"
-
+'''
 run = True
 print "Welcome to the Mandelbrot Set \nEnter exit at anytime to quit."
 
@@ -59,18 +59,18 @@ while run:
     else:
         s = float(step)
         if s == 1:
-            con = 1;
+            con = 1
     if goFunct:
-        str = ""
+        str_ = ""
         xx = np.arange(float(startX), float(stopX) + con, s)
         yy = np.arange(float(stopY),  float(startY) - con, s * -1)
         for y in yy:
-            print y
+            '''print y'''
             for x in xx:
-                print x
+                '''print x'''
                 if accept_c(Complex(x, y)):
-                    str += "X"
+                    str_ += "X"
                 else:
-                    str += "_"
-            str += "\n"
-        print str
+                    str_ += "_"
+            str_ += "\n"
+        print str_
