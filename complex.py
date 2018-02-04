@@ -41,8 +41,9 @@ class Complex:
     def __str__(self):
         return 'Real: %s \nImag: %s' % (self.real, self.imag)
 
+    def __trunc__(self):
+        return int(self.real)
+
 z = Complex(5, 5)
 
-print z.getReal()
-print z.__str__()
 
