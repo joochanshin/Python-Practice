@@ -1,15 +1,17 @@
 from math import *
+from decimal import *
 from complex import Complex
 
 
-c1 = Complex(-2, -2)
+c1 = Complex(-2, 1)
 
 
 def z(n, c):
     if n == 0:
-        return 0
+        return Complex(0, 0)
     else:
-        return (z(n-1, c) ** 2) + c
+        tmp = z(n - 1, c)
+        return tmp * tmp + c
 
 
 def accept_c(c):
@@ -19,5 +21,9 @@ def accept_c(c):
         return True
 
 
+print accept_c(c1)
 
-
+for x in range(-2, 3):
+    for y in range(-2, 3):
+        print accept_c(Complex(x, y))
+    print "\n"
