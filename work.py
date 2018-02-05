@@ -52,8 +52,8 @@ while run:
     if step == "exit":
         break
     if startX > stopX or \
-        startY > stopY or \
-        step <= 0:
+            startY > stopY or \
+            step <= 0:
         goFunct = False
         print "Bad inputs. Could not render."
     else:
