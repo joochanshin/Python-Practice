@@ -45,7 +45,7 @@ Originally I had
  if n == 0:
         return 0
 ```
-to break the resursive function; however, the program was written in a way that it is expected a Complex object to be returned, rather than an integer. 
+to break the resursive function; however, the program was written in a way that it is expecting a Complex object to be returned, rather than an integer. 
 
 Other problems were small typos in the operator overloads like in the __add__ method for example would have
 ```
