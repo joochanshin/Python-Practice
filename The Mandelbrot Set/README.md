@@ -6,16 +6,15 @@ A small project to print out X and _ in relation to the Mandelbrot set.
 
 The Mandelbrot set starts with a recursively defined formula. In this formula,
 c, is a **Complex Number**.
-
 <p align="center">
-  <img width="400" height="100" src="https://github.com/joochanshin/Python-Practice/blob/master/SC/SS5.png">
+  <img width="400" height="100" src=https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS5.png">
 </p>
 
 The Mandelbrot set is the set of numbers c such that for every n we know
 that
 
 <p align="center">
-  <img width="200" height="100" src="https://github.com/joochanshin/Python-Practice/blob/master/SC/SS6.png">
+  <img width="200" height="100" src="https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS6.png">
 </p>
 
 Because it would not be very possible to check every possible number, the program checks through numbers from 0 to 10.
@@ -23,7 +22,7 @@ Because it would not be very possible to check every possible number, the progra
 When we insert *1* as the value for c, we get a very large number which is obviously not less than or equal to 2; however when we insert the number *-1* we get the value 0. So below is a table for a few number combinations:
 
 <p align="center">
-  <img width="600" height="200" src="https://github.com/joochanshin/Python-Practice/blob/master/SC/SS1.png">
+  <img width="600" height="200" src="https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS1.png">
 </p>
 
 Knowing this, I came up with a recursive function 
@@ -95,12 +94,12 @@ The forloop would only print out the numbers 2 through 3 if it is 1, which shoul
 
 This is the finished project:
 <p align="center">
-  <img width="600" height="800" src="https://github.com/joochanshin/Python-Practice/blob/master/SC/SS4.png">
+  <img width="600" height="800" src="https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS4.png">
 </p>
 The numbers you see were to debug the earlier forloop problem.
 
 <p align="center">
-  <img width="600" height="700" src="https://github.com/joochanshin/Python-Practice/blob/master/SC/SS3.png">
+  <img width="600" height="700" src="https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS3.png">
 </p>
 
 
