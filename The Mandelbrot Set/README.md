@@ -7,7 +7,7 @@ A small project to print out X and _ in relation to the Mandelbrot set.
 The Mandelbrot set starts with a recursively defined formula. In this formula,
 c, is a **Complex Number**.
 <p align="center">
-  <img width="400" height="100" src=https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS5.png">
+  <img width="400" height="100" src="https://github.com/joochanshin/Python-Practice/blob/master/The%20Mandelbrot%20Set/SC/SS5.png">
 </p>
 
 The Mandelbrot set is the set of numbers c such that for every n we know
