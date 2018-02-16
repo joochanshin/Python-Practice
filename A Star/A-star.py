@@ -1,4 +1,5 @@
 from Queue import PriorityQueue
+from sympy import *
 
 class State (object):
     def __init__(self, value, parent,
@@ -20,4 +21,3 @@ class State (object):
             pass
         def CreateChildren(self):
             pass
-
