@@ -32,7 +32,10 @@ def getFile():
 def getWords(arr):
     words = []
     for i in range(len(arr)):
-        print("Please give a {}".format(arr[i]))
+        if arr[i][0] == "a" or arr[i][0] == "e" or arr[i][0] == "i" or arr[i][0] == "o" or arr[i][0] == "u":
+            print("Please give an {}".format(arr[i]))
+        else:
+            print("Please give a {}".format(arr[i]))
         inp = input()
         words.append(inp)
     return words
