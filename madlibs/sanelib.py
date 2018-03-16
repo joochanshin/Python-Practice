@@ -1,6 +1,8 @@
 import fileinput
 import sys
 
+# Testing something
+
 
 def getFile():
     inp = input("Enter the name of the file to use:")
@@ -46,7 +48,10 @@ def replace(file, words):
     file = file.split()
     for i in range(len(file)):
         if file[i][0] == "[":
-            file[i] = words[counter]
+            if file[i][-1] == "." or file[i][-1] == ",":
+                file[i] = words[counter] + file[i][-1]
+            else:
+                file[i] = words[counter]
             counter += 1
     file = " ".join(file)
     return file
